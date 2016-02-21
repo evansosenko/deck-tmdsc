@@ -30,7 +30,7 @@ exports.config = {
   plugins: {
     digest: {
       prependHost: {
-        production: '/deck-bespoke.js'
+        production: '/deck-tmdsc'
       },
       referenceFiles: /\.(css|html|js)$/
     },
