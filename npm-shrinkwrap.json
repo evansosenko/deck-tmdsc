@@ -526,6 +526,11 @@
       "from": "bespoke-theme-cube@>=2.0.1 <3.0.0",
       "resolved": "https://registry.npmjs.org/bespoke-theme-cube/-/bespoke-theme-cube-2.0.1.tgz"
     },
+    "bespoke-touch": {
+      "version": "1.0.0",
+      "from": "bespoke-touch@latest",
+      "resolved": "https://registry.npmjs.org/bespoke-touch/-/bespoke-touch-1.0.0.tgz"
+    },
     "better-assert": {
       "version": "1.0.2",
       "from": "better-assert@>=1.0.0 <1.1.0",

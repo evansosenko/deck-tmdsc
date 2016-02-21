@@ -1,10 +1,12 @@
 import bespoke from 'bespoke'
 import classes from 'bespoke-classes'
 import keys from 'bespoke-keys'
+import touch from 'bespoke-touch'
 
 const plugins = [
+  classes(),
   keys(),
-  classes()
+  touch()
 ]
 
 export default (element) => {
