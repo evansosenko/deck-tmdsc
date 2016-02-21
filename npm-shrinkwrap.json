@@ -516,6 +516,11 @@
       "from": "bespoke-classes@latest",
       "resolved": "https://registry.npmjs.org/bespoke-classes/-/bespoke-classes-1.0.0.tgz"
     },
+    "bespoke-hash": {
+      "version": "1.0.2",
+      "from": "bespoke-hash@latest",
+      "resolved": "https://registry.npmjs.org/bespoke-hash/-/bespoke-hash-1.0.2.tgz"
+    },
     "bespoke-keys": {
       "version": "1.1.0",
       "from": "bespoke-keys@>=1.1.0 <2.0.0",
