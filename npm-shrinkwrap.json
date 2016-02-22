@@ -2843,6 +2843,11 @@
       "from": "jsonpointer@2.0.0",
       "resolved": "https://registry.npmjs.org/jsonpointer/-/jsonpointer-2.0.0.tgz"
     },
+    "katex": {
+      "version": "0.6.0-pre",
+      "from": "rxfork/katex#contrib",
+      "resolved": "git://github.com/rxfork/katex.git#0ea062f1ea30aed6b3f56046b7995e7e231e1706"
+    },
     "kind-of": {
       "version": "3.0.2",
       "from": "kind-of@>=3.0.2 <4.0.0",
@@ -3243,6 +3248,11 @@
       "version": "1.0.1",
       "from": "map-obj@>=1.0.1 <2.0.0",
       "resolved": "https://registry.npmjs.org/map-obj/-/map-obj-1.0.1.tgz"
+    },
+    "match-at": {
+      "version": "0.1.0",
+      "from": "match-at@>=0.1.0 <0.2.0",
+      "resolved": "https://registry.npmjs.org/match-at/-/match-at-0.1.0.tgz"
     },
     "matchdep": {
       "version": "1.0.1",

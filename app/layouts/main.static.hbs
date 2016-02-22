@@ -18,6 +18,7 @@ baseurl: /deck-tmdsc
     <meta name="mobile-web-app-capable" content="yes">
     <link type="text/plain" rel="author" href="{{baseurl}}/humans.txt">
     <link rel="stylesheet" href="DIGEST(/app.css)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
     {{> favicon}}
   </head>
   <body>
@@ -25,6 +26,7 @@ baseurl: /deck-tmdsc
       {{content}}
     </main>
     <script>document.documentElement.className = 'js'</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
     <script src="DIGEST(/app.js)"></script>
     <script>require('.').default()</script>
   </body>

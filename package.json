@@ -42,6 +42,7 @@
     "bespoke-hash": "^1.0.2",
     "bespoke-keys": "^1.1.0",
     "bespoke-touch": "^1.0.0",
+    "katex": "github:rxfork/katex#contrib",
     "sanitize.css": "^3.2.0"
   },
   "devDependencies": {
