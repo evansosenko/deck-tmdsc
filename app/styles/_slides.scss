@@ -1,0 +1,27 @@
+header {
+  &.bespoke-active {
+    h1 {
+      @include media('>=xga') {
+        font-size: 5rem;
+      }
+    }
+
+    .ucr-logo {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      width: 20%;
+    }
+
+    @include media('>=xga') {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        max-width: 90%;
+      }
+    }
+  }
+}

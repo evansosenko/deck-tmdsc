@@ -5,8 +5,7 @@ h3 {
 }
 
 h1 {
-  @include media('>=xga') {
-    font-weight: 100;
-    text-align: center;
-  }
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
 }
