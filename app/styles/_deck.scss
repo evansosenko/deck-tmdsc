@@ -1,22 +1,18 @@
 .bespoke-parent {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
 .bespoke-active {
-  width: 100vw;
-  max-width: 100%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .bespoke-inactive {
   display: none;
-  margin: 0;
-  padding: 0;
   opacity: 0;
   pointer-events: none;
 }
