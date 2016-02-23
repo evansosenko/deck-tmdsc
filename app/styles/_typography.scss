@@ -1,0 +1,12 @@
+h1,
+h2,
+h3 {
+  font-family: $font-family-heading;
+}
+
+h1 {
+  @include media('>=xga') {
+    font-weight: 100;
+    text-align: center;
+  }
+}
