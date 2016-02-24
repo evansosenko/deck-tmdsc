@@ -1,4 +1,7 @@
 header {
+  background-color: color(background-bright);
+  color: color(light);
+
   h1 {
     @include media('>=xga') {
       font-size: 5rem;
