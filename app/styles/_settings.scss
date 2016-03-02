@@ -1,16 +1,4 @@
-@function color($color) {
-  @return map-get($colors, $color);
-}
-
+// Breakpoints for inline-media.
 $breakpoints: (
   xga: 1024px
-);
-
-$font-family-heading: (
-  'Questrial'
-);
-
-$colors: (
-  background-bright: #7bb7fa,
-  light: #fff
 );

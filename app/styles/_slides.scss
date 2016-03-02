@@ -1,33 +1,181 @@
-header {
-  background-color: color(background-bright);
-  color: color(light);
+section {
+  background-color: color(slide-bg);
+  color: color(slide-text);
 
-  h1 {
-    @include media('>=xga') {
-      font-size: 5rem;
-    }
+  h2 {
+    color: color(heading-text);
   }
 
-  .author {
-    font-size: 4rem;
+  strong {
+    color: color(bold-text);
+  }
+}
+
+a {
+  color: inherit;
+
+  a {
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+
+.marks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  img {
+    width: 40%;
+  }
+}
+
+.slide-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: color(title-bg);
+  color: color(title-text);
+
+  .title {
+    margin-bottom: 3rem;
+  }
+
+  .subtitle {
     text-align: center;
   }
 
-  .ucr-logo {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    width: 40%;
+  .authors {
+    flex: 1;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+
+    @include media('<xga') {
+      margin-top: 2rem;
+    }
+
+    @include media('>=xga') {
+      display: flex;
+      justify-content: space-between;
+      order: -1;
+      width: 100%;
+    }
+  }
+}
+
+.slide-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: color(title-bg);
+  color: color(title-text);
+
+  ul {
+    margin-bottom: 2rem;
+    list-style: none;
   }
 
-  @include media('>=xga') {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  li {
+    margin-bottom: 2rem;
+  }
 
-    .title {
-      max-width: 90%;
+  h2,
+  .main {
+    text-align: center;
+  }
+
+  .main {
+    flex: 1;
+  }
+
+  img {
+    width: 20%;
+    margin-top: 3rem;
+  }
+}
+
+.slide-overview {
+  figure {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 5rem;
+  }
+
+  img {
+    width: 47%;
+  }
+}
+
+.slide-energy {
+  h2 {
+    text-align: center;
+  }
+
+  .bands {
+    display: flex;
+    justify-content: space-between;
+
+    figure {
+      max-width: 70%;
     }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .values {
+    display: flex;
+    justify-content: space-between;
+
+    @include media('>=xga') {
+      flex-direction: column;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.slide-sources {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
+.slide-channels {
+  h3 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+.slide-optical {
+  height: 100%;
+
+  .optical {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  figure {
+    align-self: flex-end;
+    height: 60%;
+  }
+
+  img {
+    height: 100%;
   }
 }

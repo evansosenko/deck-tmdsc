@@ -1,10 +1,192 @@
-<header>
-  <div class="title">
-    <h1>{{meta.title}}</h1>
-    <p class="author">{{text.author}}</p>
-    <p class="author">{{text.coauthor}}</p>
+<header class="slide-title">
+  <h1 class="title">{{meta.title}}</h1>
+  <p class="subtitle">
+    <a href="{{text.session.url}}">{{text.session.name}}</a>
+  </p>
+  <p class="subtitle">{{text.meeting.name}}</p>
+  <p class="subtitle">{{text.meeting.location}}</p>
+  <ul class="authors">
+    <li><a href="{{text.author.url}}">{{text.author.name}}</a></li>
+    <li><a href="{{text.coauthor.url}}">{{text.coauthor.name}}</a></li>
+  </ul>
+  <div class="marks">
+    <img src="DIGEST(/images/tmd-crystal-top.png)"
+         alt="TMD crystal">
+    <img src="DIGEST(/images/ucr-logo-white.svg)"
+         alt="{{text.ucr.name}}">
   </div>
-  <img class="ucr-logo"
-       src="DIGEST(/images/ucr-logo-white.svg)"
-       alt="University of California, Riverside">
 </header>
+
+<section class="slide-overview">
+  <h2>Transition metal dichalcogenides</h2>
+  <ol>
+    <li>TMD tight-biding, low-energy, two-valley model</li>
+    <li>Intrinsic vs induced superconducting systems</li>
+    <li>Intervalley vs intravalley paring channels</li>
+    <li>Optical valley selection rules and Berry curvature</li>
+  </ol>
+  <figure class="crystal">
+    <img src="DIGEST(/images/tmd-crystal-top.png)"
+         alt="TMD crystal (top view)">
+    <img src="DIGEST(/images/tmd-crystal-side.png)"
+         alt="TMD crystal (side view)">
+  </figure>
+</section>
+
+<section>
+  <h2>TMD monolayers</h2>
+  <ul>
+    <li>Similar to monolayer graphene</li>
+    <li>Two inequivalent valleys: \( \mathbf{K} \), \( \mathbf{K}' \)</li>
+    <li><strong>Inversion symmetry breaking</strong>: gapped out spectrum</li>
+    <li>Strong <strong>spin-orbit coupling</strong>:
+        large valance band splitting</li>
+    <li>Leads to opposite valley Berry curvature</li>
+    <li>Optical valley selection rules and valley hall effect</li>
+    <li>Two state tight binding model:
+        \( d_{z^2} \), and \( d_{xy} \pm i d_{x^2 - y^2} \)</li>
+  </ul>
+  <p>
+    $$
+    H_0^{\tau s} \left( \mathbf{k} \right) =
+    a t \left(\tau k_x s_x + k_y s_y \right) \otimes I_2
+    $$$$
+    + \frac{\Delta}{2} s_z \times I_2
+    - \lambda \tau \left(\sigma_z - 1 \right) \otimes S_z
+    $$
+  </p>
+</section>
+
+<section class="slide-energy">
+  <h2>Energy bands</h2>
+  <div class="bands">
+    <figure>
+      <img src="DIGEST(/images/energy-bands.svg)"
+           alt="Energy bands">
+    </figure>
+    <div class="values">
+      <ul>
+        <li>\( \Delta \)—band splitting</li>
+        <li>\( \lambda \)—spin splitting</li>
+        <li>\( \tau \)—valley index</li>
+        <li>\( s \)—spin index</li>
+      </ul>
+      <ul>
+        <li>\( a t = 3.15 \) Å eV</li>
+        <li>\( \Delta = 1.66 \) eV</li>
+        <li>\( 2 \lambda = 0.15 \) eV</li>
+        <li>\( \mu = -0.83 \) eV</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide-sources">
+  <h2>Superconducting sources</h2>
+  <div>
+    <h3>Substrate induced</h3>
+    <p>
+      $$
+      V =
+      - \sum_{\mathbf{k} \nu \tau} \Delta_{\nu}
+      {d^{\nu}_{\tau}}^{\dagger} \left( \mathbf{k} \right)
+      d^{\nu}_{-\tau} \left( \mathbf{k} \right)
+      $$
+    </p>
+    <p>⇒ Intervalley pairing</p>
+  </div>
+  <div>
+    <h3>Intrinsic (density-density interaction)</h3>
+    <p>
+      $$
+      V =
+      \frac{1}{2} \sum_{\mathbf{R} \mathbf{R'}}
+      v_{\mathbf{R} \mathbf{R'}}
+      :n_{\mathbf{R}} n_{\mathbf{R'}}:
+      $$
+    </p>
+    <p>Assume even pairing interaction &amp; mean field</p>
+    <p>⇒ Intravalley and intervalley pairing</p>
+  </div>
+</section>
+
+<section class="slide-channels">
+  <h2>Superconducting channels</h2>
+  <ul>
+    <li>Project into lower \( \tau = s \) bands</li>
+    <li>Solutions mimic BCS form</li>
+    <li>\( m = 0 \) intervalley channel always dominates</li>
+    <li>Both classes give same form for dominant paring</li>
+  </ul>
+  <h3>Induced</h3>
+  <p>
+    $$
+    \Delta_{\mathbf{k}} =
+    \frac{1}{2} \left( \Delta_+ + \Delta_- \right)
+    - \frac{1}{2} \left( \Delta_+ - \Delta_- \right)
+    \cos{\theta_{\mathbf{k}}}
+    $$
+  </p>
+  <h3>Intrinsic</h3>
+  <p>
+    $$
+    \Delta_{\mathbf{k}} =
+    g_{\mathbf{k}}
+    v_0 \sum_{\mathbf{k}'}
+    g^*_{\mathbf{k}'}
+    \langle c_{-\mathbf{k}' \alpha'} c_{\mathbf{k}' \alpha} \rangle
+    $$
+  </p>
+</section>
+
+<section>
+  <h2>Berry curvature</h2>
+  <ul>
+    <li>BCS ground state has zero net curvature</li>
+    <li>Optical excitation (pair-breaking)</li>
+  </ul>
+</section>
+
+<section class="slide-optical">
+  <h2>Optical coupling</h2>
+  <div class="optical">
+    <ul>
+      <li>Harmonic perturbation ⇒ optical transition rates</li>
+      <li>Still coupled to circularly polarized light</li>
+      <li>
+        \( \mathbf{A} / |\mathbf{A}| =
+        \mathbf{\epsilon} e^{i \omega t}
+        + \mathbf{\epsilon}^* e^{-i \omega t} \)
+      </li>
+      <li>\( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)</li>
+    </ul>
+    <figure>
+      <img src="DIGEST(/images/optical-transitions.svg)"
+      alt="Optical transition rate">
+    </figure>
+  </div>
+</section>
+
+<footer class="slide-end">
+  <h2>Next steps</h2>
+  <div class="main">
+    <ul>
+      <li>Compute superconducting current</li>
+      <li>Contribution to Valley Hall conductivity from pair-breaking</li>
+    </ul>
+    <h3>Resources</h3>
+    <ul>
+      <li><a href="{{text.eprint.url}}">{{text.eprint.name}}</a></li>
+      <li><a href="{{text.related_talk.url}}">
+          Upcoming talk this session: <br> {{text.related_talk.name}}
+      </a></li>
+    </ul>
+    <img src="DIGEST(/images/tmd-crystal-top.png)"
+         alt="TMD crystal">
+  </div>
+  <div class="marks">
+    <p><a href="{{text.author.url}}">{{text.author.site}}</a></p>
+    <img src="DIGEST(/images/ucr-logo-white.svg)"
+         alt="{{text.ucr.name}}">
+  </div>
+</footer>
