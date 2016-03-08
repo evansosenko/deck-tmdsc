@@ -10,18 +10,21 @@
 <meta property="og:description" content="Superconducting phases of monolayer transition-metal dichalcogenides. Contributed Talk, 2016 APS March Meeting.">
 <link rel="canonical" href="https://evansosenko.com/deck-tmdsc/">
 <meta property="og:url" content="https://evansosenko.com/deck-tmdsc/">
-<meta property="og:updated_time" content="2016-02-21T21:50:26.562Z">
+<meta property="og:updated_time" content="2016-03-08T00:53:06.992Z">
 <meta property="og:site_name" content="deck-tmdsc">
 <meta name="application-name" content="deck-tmdsc">
 <meta property="og:locale" content="en_US">
-<meta property="keywords" content="physics,deck,bespoke.js">
+<meta property="keywords" content="dichalcogenides,monolayer,superconductivity,tmd,tmdc,aps,american physical society,march meeting,ucr,physics,talk,deck,bespoke.js">
+<meta name="theme-color" content="rgba(4, 142, 216, 100)">
+<meta property="og:image" content="/deck-tmdsc/images/tmd-crystal-top-4a0352cd.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:creator" content="@evansosenko">
 <meta name="twitter:site" content="@evansosenko">
 <meta name="msapplication-config" content="none">
 <meta name="mobile-web-app-capable" content="yes">
 <link type="text/plain" rel="author" href="/deck-tmdsc/humans.txt">
-<link rel="stylesheet" href="/deck-tmdsc/app-a439027e.css">
+<link rel="stylesheet" href="/deck-tmdsc/app-b1c9d44b.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
 <link rel="icon" type="image/png" href="/deck-tmdsc/favicon/favicon-196x196-58b0c18d.png" sizes="196x196">
 <link rel="icon" type="image/png" href="/deck-tmdsc/favicon/favicon-96x96-2d238c4e.png" sizes="96x96">
 <link rel="icon" type="image/png" href="/deck-tmdsc/favicon/favicon-32x32-10183e3e.png" sizes="32x32">
@@ -45,10 +48,158 @@
 <body>
 <main>
 <article id="deck">
+<header class="slide-title">
+<h1 class="title">Superconducting Phases of Monolayer TMDs</h1>
+<p class="subtitle">
+<a href="https://meetings.aps.org/Meeting/MAR16/Session/R15.2">Session R15: 2D Materials: Superconductivity and Correlations I</a>
+</p>
+<p class="subtitle">APS March Meeting March 2016</p>
+<p class="subtitle">Baltimore, MD, US</p>
+<ul class="authors">
+<li><a href="https://evansosenko.com/">Evan Sosenko</a></li>
+<li><a href="http://faculty.ucr.edu/~vivekj/">Vivek Aji</a></li>
+</ul>
+<div class="marks">
+<img src="/deck-tmdsc/images/tmd-crystal-top-4a0352cd.png" alt="TMD crystal">
+<img src="/deck-tmdsc/images/ucr-logo-white-a7a5b4f1.svg" alt="University of California, Riverside">
+</div>
+</header>
+<section class="slide-overview">
+<h2>Transition metal dichalcogenides</h2>
+<ol>
+<li>TMD tight-biding, low-energy, two-valley model</li>
+<li>Intrinsic vs induced superconducting systems</li>
+<li>Intervalley vs intravalley paring channels</li>
+<li>Optical valley selection rules and Berry curvature</li>
+</ol>
+<figure class="crystal">
+<img src="/deck-tmdsc/images/tmd-crystal-top-4a0352cd.png" alt="TMD crystal (top view)">
+<img src="/deck-tmdsc/images/tmd-crystal-side-54d576cc.png" alt="TMD crystal (side view)">
+</figure>
+</section>
+<section>
+<h2>TMD monolayers</h2>
+<ul>
+<li>Similar to monolayer graphene</li>
+<li>Two inequivalent valleys: \( \mathbf{K} \), \( \mathbf{K}' \)</li>
+<li><strong>Inversion symmetry breaking</strong>: gapped out spectrum</li>
+<li>Strong <strong>spin-orbit coupling</strong>: large valance band splitting</li>
+<li>Leads to opposite valley Berry curvature</li>
+<li>Optical valley selection rules and valley hall effect</li>
+<li>Two state tight binding model: \( d_{z^2} \), and \( d_{xy} \pm i d_{x^2 - y^2} \)</li>
+</ul>
+<p>
+$$ H_0^{\tau s} \left( \mathbf{k} \right) = a t \left(\tau k_x s_x + k_y s_y \right) \otimes I_2 $$$$ + \frac{\Delta}{2} s_z \times I_2 - \lambda \tau \left(\sigma_z - 1 \right) \otimes S_z $$
+</p>
+</section>
+<section class="slide-energy">
+<h2>Energy bands</h2>
+<div class="bands">
+<figure>
+<img src="/deck-tmdsc/images/energy-bands-4ece729c.svg" alt="Energy bands">
+</figure>
+<div class="values">
+<ul>
+<li>\( \Delta \)—band splitting</li>
+<li>\( \lambda \)—spin splitting</li>
+<li>\( \tau \)—valley index</li>
+<li>\( s \)—spin index</li>
+</ul>
+<ul>
+<li>\( a t = 3.15 \) Å eV</li>
+<li>\( \Delta = 1.66 \) eV</li>
+<li>\( 2 \lambda = 0.15 \) eV</li>
+<li>\( \mu = -0.83 \) eV</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="slide-sources">
+<h2>Superconducting sources</h2>
+<div>
+<h3>Substrate induced</h3>
+<p>
+$$ V = - \sum_{\mathbf{k} \nu \tau} \Delta_{\nu} {d^{\nu}_{\tau}}^{\dagger} \left( \mathbf{k} \right) d^{\nu}_{-\tau} \left( \mathbf{k} \right) $$
+</p>
+<p>⇒ Intervalley pairing</p>
+</div>
+<div>
+<h3>Intrinsic (density-density interaction)</h3>
+<p>
+$$ V = \frac{1}{2} \sum_{\mathbf{R} \mathbf{R'}} v_{\mathbf{R} \mathbf{R'}} :n_{\mathbf{R}} n_{\mathbf{R'}}: $$
+</p>
+<p>Assume even pairing interaction &amp; mean field</p>
+<p>⇒ Intravalley and intervalley pairing</p>
+</div>
+</section>
+<section class="slide-channels">
+<h2>Superconducting channels</h2>
+<ul>
+<li>Project into lower \( \tau = s \) bands</li>
+<li>Solutions mimic BCS form</li>
+<li>\( m = 0 \) intervalley channel always dominates</li>
+<li>Both classes give same form for dominant paring</li>
+</ul>
+<h3>Induced</h3>
+<p>
+$$ \Delta_{\mathbf{k}} = \frac{1}{2} \left( \Delta_+ + \Delta_- \right) - \frac{1}{2} \left( \Delta_+ - \Delta_- \right) \cos{\theta_{\mathbf{k}}} $$
+</p>
+<h3>Intrinsic</h3>
+<p>
+$$ \Delta_{\mathbf{k}} = g_{\mathbf{k}} v_0 \sum_{\mathbf{k}'} g^*_{\mathbf{k}'} \langle c_{-\mathbf{k}' \alpha'} c_{\mathbf{k}' \alpha} \rangle $$
+</p>
+</section>
+<section>
+<h2>Berry curvature</h2>
+<ul>
+<li>BCS ground state has zero net curvature</li>
+<li>Optical excitation (pair-breaking)</li>
+</ul>
+</section>
+<section class="slide-optical">
+<h2>Optical coupling</h2>
+<div class="optical">
+<ul>
+<li>Harmonic perturbation ⇒ optical transition rates</li>
+<li>Still coupled to circularly polarized light</li>
+<li>
+\( \mathbf{A} / |\mathbf{A}| = \mathbf{\epsilon} e^{i \omega t} + \mathbf{\epsilon}^* e^{-i \omega t} \)
+</li>
+<li>\( \mathbf{k} \rightarrow \mathbf{k} + e \mathbf{A} \)</li>
+</ul>
+<figure>
+<img src="/deck-tmdsc/images/optical-transitions-58674699.svg" alt="Optical transition rate">
+</figure>
+</div>
+</section>
+<footer class="slide-end">
+<h2>Next steps</h2>
+<div class="main">
+<ul>
+<li>Compute superconducting current</li>
+<li>Contribution to Valley Hall conductivity from pair-breaking</li>
+</ul>
+<h3>Resources</h3>
+<ul>
+<li><a href="http://arxiv.org/abs/1512.01261">e-Print on arXiv.org</a></li>
+<li><a href="https://meetings.aps.org/Meeting/MAR16/Session/R15.5">
+Upcoming talk this session:<br>Junhua Zhang on magnetic response
+</a></li>
+</ul>
+<img src="/deck-tmdsc/images/tmd-crystal-top-4a0352cd.png" alt="TMD crystal">
+</div>
+<div class="marks">
+<p><a href="https://evansosenko.com/">evansosenko.com</a></p>
+<img src="/deck-tmdsc/images/ucr-logo-white-a7a5b4f1.svg" alt="University of California, Riverside">
+</div>
+</footer>
 </article>
 </main>
 <script>document.documentElement.className="js"</script>
-<script src="/deck-tmdsc/app-f3048c88.js"></script>
+<script>WebFontConfig={google:{families:["Lato"]}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.21/webfontloader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+<script src="/deck-tmdsc/app-1bdf3e79.js"></script>
 <script>require(".")["default"]()</script>
 </body>
 </html>
