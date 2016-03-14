@@ -175,10 +175,11 @@ a {
   }
 }
 
-.slide-optical {
+.slide-optical,
+.slide-curvature {
   height: 100%;
 
-  .optical {
+  .main {
     display: flex;
     flex-direction: column;
     height: 100%;
