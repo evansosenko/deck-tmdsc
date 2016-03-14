@@ -75,13 +75,19 @@ a {
   color: color(title-text);
 
   ul {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0;
     list-style: none;
   }
 
   li {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .next-steps {
+    border-bottom-width: 2px;
+    border-style: dotted;
+    border-color: color(warm);
   }
 
   h2,
