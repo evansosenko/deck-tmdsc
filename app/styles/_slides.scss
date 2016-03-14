@@ -161,9 +161,14 @@ a {
 }
 
 .slide-sources {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include media('>=xga') {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
 
   p,
   h2,
