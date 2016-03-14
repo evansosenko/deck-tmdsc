@@ -131,10 +131,13 @@ a {
 
   .bands {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 
-    figure {
-      max-width: 70%;
+    @include media('>=xga') {
+      flex-direction: row;
+      align-items: initial;
     }
 
     img {
@@ -144,10 +147,11 @@ a {
 
   .values {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 
-    @include media('>=xga') {
-      flex-direction: column;
+    ul {
+      margin-bottom: 2rem;
     }
 
     li {
