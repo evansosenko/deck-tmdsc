@@ -1,5 +1,13 @@
 $font-family-heading: (
-  'Lato'
+  Lato,
+  'Noto Sans',
+  'Open Sans',
+  'Source Sans Pro',
+  'Helvetica Neue',
+  Helvetica,
+  Roboto,
+  Arial,
+  sans-serif
 );
 
 @mixin slide-font-size($size) {
