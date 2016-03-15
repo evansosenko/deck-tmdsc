@@ -205,10 +205,16 @@ a {
 
   figure {
     align-self: flex-end;
-    height: 60%;
+    @include media('>=xga') {
+      height: 60%;
+    }
   }
 
   img {
-    height: 100%;
+    width: 100%;
+
+    @include media('>=xga') {
+      height: 100%;
+    }
   }
 }
