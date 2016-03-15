@@ -10,6 +10,11 @@ $font-family-heading: (
   sans-serif
 );
 
+$font-family-author: (
+  Merriweather,
+  serif
+);
+
 @mixin slide-font-size($size) {
   @include media('>=xga') {
     font-size: $size;
@@ -56,4 +61,6 @@ ol {
 .authors {
   @include slide-font-size(3rem);
   font-size: 2rem;
+  font-family: $font-family-author;
+  font-weight: 300;
 }
