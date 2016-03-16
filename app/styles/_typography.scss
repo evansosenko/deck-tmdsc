@@ -65,7 +65,7 @@ cite {
 
 .authors {
   @include slide-font-size(3rem);
-  font-size: 2rem;
   font-family: $font-family-author;
+  font-size: 2rem;
   font-weight: 300;
 }
