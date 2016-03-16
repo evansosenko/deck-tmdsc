@@ -156,8 +156,12 @@ a {
 
   .values {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    white-space: nowrap;
+
+    @include media('>=xga') {
+      flex-direction: column;
+    }
 
     ul {
       margin-bottom: 2rem;
