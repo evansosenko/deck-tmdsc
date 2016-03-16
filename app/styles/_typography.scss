@@ -54,6 +54,11 @@ ol {
   padding-left: 1em;
 }
 
+cite {
+  @include slide-font-size(1.5rem);
+  font-size: .8rem;
+}
+
 .subtitle {
   @include slide-font-size(1.5rem);
 }
