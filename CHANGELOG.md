@@ -7,4 +7,8 @@ This change log follows the conventions of
 
 ## [Unreleased][Unreleased]
 
-[Unreleased]: https://github.com/evansosenko/deck-tmdsc/compare/v0.1.0...HEAD
+## 1.0.0 / 2016-03-17
+
+- Presented at the APS March Meeting 2016.
+
+[Unreleased]: https://github.com/evansosenko/deck-tmdsc/compare/v1.0.0...HEAD

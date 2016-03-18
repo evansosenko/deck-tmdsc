@@ -1,6 +1,6 @@
 {
   "name": "deck-tmdsc",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Superconducting phases of monolayer transition-metal dichalcogenides. Contributed Talk, 2016 APS March Meeting.",
   "private": true,
   "keywords": [
