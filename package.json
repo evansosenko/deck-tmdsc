@@ -41,7 +41,7 @@
     "bespoke-keys": "^1.1.0",
     "bespoke-touch": "^1.0.0",
     "include-media": "^1.4.2",
-    "sanitize.css": "^3.2.0"
+    "sanitize.css": "^4.0.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2.1.0",

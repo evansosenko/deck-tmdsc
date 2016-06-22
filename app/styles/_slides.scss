@@ -14,10 +14,8 @@ section {
 a {
   color: inherit;
 
-  a {
-    &:visited {
-      color: inherit;
-    }
+  &:visited {
+    color: inherit;
   }
 }
 
@@ -89,7 +87,10 @@ a {
     margin-bottom: 2rem;
     border-top-width: 2px;
     border-bottom-width: 2px;
-    border-style: dotted;
+    border-top-style: dotted;
+    border-right-style: none;
+    border-bottom-style: dotted;
+    border-left-style: none;
     border-color: color(warm);
   }
 

@@ -4484,9 +4484,9 @@
       "resolved": "https://registry.npmjs.org/rx-lite/-/rx-lite-3.1.2.tgz"
     },
     "sanitize.css": {
-      "version": "3.3.0",
-      "from": "sanitize.css@>=3.2.0 <4.0.0",
-      "resolved": "https://registry.npmjs.org/sanitize.css/-/sanitize.css-3.3.0.tgz"
+      "version": "4.0.0",
+      "from": "sanitize.css@4.0.0",
+      "resolved": "https://registry.npmjs.org/sanitize.css/-/sanitize.css-4.0.0.tgz"
     },
     "sass-brunch": {
       "version": "2.6.3",
