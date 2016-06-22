@@ -8,9 +8,12 @@
 
 > Built from [makenew/deck-bespoke.js](https://github.com/makenew/deck-bespoke.js).
 
+[![wercker status](https://app.wercker.com/status/27a62170f3b7b1eed4a57fb56deb1596/m "wercker status")](https://app.wercker.com/project/bykey/27a62170f3b7b1eed4a57fb56deb1596)
+
 ## Description
 
-Superconducting phases of monolayer transition-metal dichalcogenides. Contributed Talk, 2016 APS March Meeting.
+Superconducting phases of monolayer transition-metal dichalcogenides.
+Contributed Talk, 2016 APS March Meeting.
 
 ## Quickstart
 
@@ -71,6 +74,31 @@ View them with
 $ npm run
 ```
 
+#### Production Build
+
+Lint, test, generate, and optimize the production build to `public` with
+
+```
+$ npm run dist
+```
+
+#### Deploy to GitHub Pages
+
+Build and deploy to GitHub Pages with
+
+```
+$ npm run deploy
+```
+
+The following environment variables can be set to customize the deploy:
+`DEPLOY_REPO`, `DEPLOY_BRANCH`, `DEPLOY_NAME`, and `DEPLOY_EMAIL`.
+
+##### Deploy from wrecker
+
+Create a new wercker SSH key with the name `DEPLOY`,
+add it to a new wercker deploy step,
+and add it to the GitHub repository as a deploy key with write access.
+
 #### Brunch
 
 [Brunch] is responsible for the development cycle
@@ -82,12 +110,6 @@ Start a local Brunch development server with
 $ npm start
 ```
 
-Run tests and generate and the production build to `public` with
-
-```
-$ npm run dist
-```
-
 If installed globally, `brunch` may be invoked directly.
 View available commands with
 
@@ -97,13 +119,13 @@ $ brunch
 
 #### gulp
 
-Linting and deployment is handled by [gulp].
+Linting, deployment, and optimization is handled by [gulp].
 
 In a separate window, use gulp to watch for changes
-and lint JavaScript and Sass files with
+and lint HTML, JavaScript, and Sass files with
 
 ```
-$ npm run lint:watch
+$ npm run watch
 ```
 
 If installed globally, `gulp` may be invoked directly.
@@ -115,35 +137,6 @@ $ gulp --tasks
 
 [Brunch]: http://brunch.io/
 [gulp]: http://gulpjs.com/
-
-#### HTMLMinifier
-
-Minify all `.html` files in the `public` directory with
-
-```
-$ npm run minify
-```
-
-### Deploy to GitHub Pages
-
-Deploy the `public` directory to GitHub Pages with
-
-```
-$ npm run deploy
-```
-
-This will minify the HTML before deployment.
-Deploy the `public` directory as-is with
-
-```
-$ npm run gh-pages
-```
-
-If `SOURCE_BRANCH` is set as a Travis CI environment variable,
-then commits pushed to that branch will be deployed automatically.
-This requires `.travis/deploy.key.enc` to be encrypted on Travis,
-the corresponding decryption command in `.travis/deploy.sh`, and
-the corresponding public key added as a deploy key to the GitHub repository.
 
 ## Tips for Deck Makers
 
@@ -184,8 +177,9 @@ Meta data is defined in `app/index.static.hbs`.
   Fields which are Nil by default are generally optional.
 - The `image`, `audio`, and `video` fields must be given
   as a fully qualified url.
-  Be careful that the asset actually exists, i.e., use a unique
-  image file and not one passed through `DIGEST` elsewhere.
+  The recommended way to specify this value is with `DIGEST`, e.g.,
+  assuming `app/assets/images/logo.png` exists,
+  use `image: DIGEST(/images/logo.png)`.
 - Instead of the `video` field, you may specify a `youtube` video id.
 - The `twitter` fields are used for [Twitter Cards], but you must
   enable them for your domain with Twitter first.

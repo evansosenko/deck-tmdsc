@@ -1,6 +1,8 @@
 exports.config = {
   npm: {
-    enabled: true
+    styles: {
+      'sanitize.css': ['sanitize.css']
+    }
   },
 
   files: {
@@ -8,9 +10,7 @@ exports.config = {
       joinTo: 'app.js'
     },
     stylesheets: {
-      joinTo: {
-        'app.css': /^app\/styles/
-      }
+      joinTo: 'app.css'
     }
   },
 

@@ -26,10 +26,8 @@ baseurl: /deck-tmdsc
     <main>
       {{content}}
     </main>
-    <script>document.documentElement.className = 'js'</script>
     {{> fonts}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
-    <script src="DIGEST(/app.js)"></script>
-    <script>require('.').default()</script>
+    <script src="DIGEST(/app.js)" defer></script>
   </body>
 </html>
